@@ -18,7 +18,7 @@ public class Tabuleiro {
     public void setTabuleiro(String[][] tabuleiro) {
         this.tabuleiro = tabuleiro;
     }
-    public void exibirT(String x){
+    public void exibirT(String x){//exibir mini tabuleiro indicando a posição atual das peças.
         for(int i=0; i<tabuleiro.length;i++){
             System.out.print("\t0");
             for(int j=0; j <tabuleiro[i].length;j++);

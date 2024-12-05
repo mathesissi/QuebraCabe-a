@@ -46,29 +46,18 @@ public class QuebraCabeça {
         listaDePeças.add(p7);
         listaDePeças.add(p8);
         listaDePeças.add(p9);
+       
+        System.out.println("Peças disponiveis:");
+        Iterator p = listaDePeças.iterator();
+        while(p.hasNext()){
+            System.out.println(p.next());
+        }
+        System.out.println("Escolha uma peça: ");
+        op1 = sc.nextInt();
+        System.out.println("Escolha outra peça: ");
+        op2 = sc.nextInt();
+        System.out.println("Escolha em qual parte encaixar (cima,baixo,esquerda,direita): ");
+        posicao = sc.next(posicao);
         
-        do{
-            System.out.println("Peças disponiveis:");
-            Iterator p = listaDePeças.iterator();
-            while(p.hasNext()){
-                System.out.println(p.next());
-            }
-            System.out.println("Escolha uma peça: ");
-            op1 = sc.nextInt();
-            System.out.println("Escolha outra peça: ");
-            op2 = sc.nextInt();
-            System.out.println("Escolha em qual parte encaixar (cima,baixo,esquerda,direita): ");
-            t1.exibirT();
-            
-           
-        }while(op ==3);
-        
-                
-   
-        
-//        do{
-//            System.out.println("selecione uma peça: ");
-//            
-//        }while(op == 3);
     } 
 }
